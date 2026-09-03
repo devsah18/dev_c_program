@@ -1,24 +1,557 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Dev C Program</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Dev C Program - Learn, practice and run C programs online.">
+
+    <title>Dev C Program | C Programming</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>💻 Dev C Program</h1>
+    <!-- ================= HEADER ================= -->
 
-    <h2>C Programming Website</h2>
+    <header class="header">
 
-    <p>Welcome to my C programming repository.</p>
+        <div class="logo">
+            <span class="logo-icon">💻</span>
+            <span>Dev C Program</span>
+        </div>
 
-    <h3>Topics</h3>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#compiler">Compiler</a>
+            <a href="https://github.com/devsah18/dev_c_program"
+               target="_blank">
+                GitHub ↗
+            </a>
+        </nav>
 
-    <ul>
-        <li>Functions</li>
-        <li>If Else</li>
-        <li>Loops</li>
-    </ul>
+        <button id="themeButton"
+                class="theme-button"
+                title="Change theme">
+            ☀️
+        </button>
 
-</body>
-</html>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                🚀 Learn C Programming
+            </div>
+
+            <h1>
+                Learn C.
+                <span>Code.</span>
+                Run.
+            </h1>
+
+            <p>
+                Practice C programming with simple examples,
+                an online editor and an interactive compiler.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#programs"
+                   class="primary-button">
+                    Explore Programs →
+                </a>
+
+                <a href="#compiler"
+                   class="secondary-button">
+                    Try Compiler
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <strong>3+</strong>
+            <span>Topics</span>
+        </div>
+
+        <div class="stat-card">
+            <strong>∞</strong>
+            <span>Practice</span>
+        </div>
+
+        <div class="stat-card">
+            <strong>⚡</strong>
+            <span>Fast Learning</span>
+        </div>
+
+        <div class="stat-card">
+            <strong>100%</strong>
+            <span>Free</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROGRAMS ================= -->
+
+    <section id="programs"
+             class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">
+                    📚 LEARN
+                </span>
+
+                <h2>
+                    C Programming Programs
+                </h2>
+
+                <p>
+                    Choose a topic and start practicing.
+                </p>
+            </div>
+
+            <div class="search-container">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search programs..."
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <button class="category-button active"
+                    data-category="all">
+                All
+            </button>
+
+            <button class="category-button"
+                    data-category="function">
+                Functions
+            </button>
+
+            <button class="category-button"
+                    data-category="if_else">
+                If Else
+            </button>
+
+            <button class="category-button"
+                    data-category="loops">
+                Loops
+            </button>
+
+        </div>
+
+
+        <!-- Program Cards -->
+
+        <div class="program-grid"
+             id="programGrid">
+
+
+            <!-- Greeting -->
+
+            <article class="program-card"
+                     data-category="function"
+                     data-name="greeting function">
+
+                <div class="program-icon">
+                    👋
+                </div>
+
+                <div class="program-info">
+
+                    <span class="program-tag">
+                        FUNCTION
+                    </span>
+
+                    <h3>
+                        Greeting Program
+                    </h3>
+
+                    <p>
+                        A simple C program using a function
+                        to display a greeting.
+                    </p>
+
+                </div>
+
+                <button class="open-button"
+                        onclick="loadProgram('greeting')">
+                    Open →
+                </button>
+
+            </article>
+
+
+            <!-- Prime -->
+
+            <article class="program-card"
+                     data-category="if_else"
+                     data-name="prime number if else">
+
+                <div class="program-icon">
+                    🔢
+                </div>
+
+                <div class="program-info">
+
+                    <span class="program-tag">
+                        IF ELSE
+                    </span>
+
+                    <h3>
+                        Prime Number
+                    </h3>
+
+                    <p>
+                        Check whether a number is prime
+                        using conditional statements.
+                    </p>
+
+                </div>
+
+                <button class="open-button"
+                        onclick="loadProgram('prime')">
+                    Open →
+                </button>
+
+            </article>
+
+
+            <!-- For loop -->
+
+            <article class="program-card"
+                     data-category="loops"
+                     data-name="for loop">
+
+                <div class="program-icon">
+                    🔄
+                </div>
+
+                <div class="program-info">
+
+                    <span class="program-tag">
+                        LOOPS
+                    </span>
+
+                    <h3>
+                        For Loop
+                    </h3>
+
+                    <p>
+                        Learn how to use a for loop
+                        in C programming.
+                    </p>
+
+                </div>
+
+                <button class="open-button"
+                        onclick="loadProgram('forloop')">
+                    Open →
+                </button>
+
+            </article>
+
+
+            <!-- While loop -->
+
+            <article class="program-card"
+                     data-category="loops"
+                     data-name="while loop">
+
+                <div class="program-icon">
+                    ♻️
+                </div>
+
+                <div class="program-info">
+
+                    <span class="program-tag">
+                        LOOPS
+                    </span>
+
+                    <h3>
+                        While Loop
+                    </h3>
+
+                    <p>
+                        Practice repetition using
+                        a while loop.
+                    </p>
+
+                </div>
+
+                <button class="open-button"
+                        onclick="loadProgram('whileloop')">
+                    Open →
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COMPILER ================= -->
+
+    <section id="compiler"
+             class="compiler-section">
+
+        <div class="section-heading compiler-heading">
+
+            <div>
+
+                <span class="section-label">
+                    💻 CODE
+                </span>
+
+                <h2>
+                    C Online Compiler
+                </h2>
+
+                <p>
+                    Write your C program, provide input and run it.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="compiler">
+
+            <!-- Editor -->
+
+            <div class="editor-panel">
+
+                <div class="panel-header">
+
+                    <div class="panel-title">
+
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+
+                        <span class="filename">
+                            main.c
+                        </span>
+
+                    </div>
+
+                    <button id="copyButton"
+                            class="small-button">
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <textarea id="code"
+                          spellcheck="false"
+                          placeholder="Write your C code here...">#include <stdio.h>
+
+int main() {
+
+    printf("Hello, World!");
+
+    return 0;
+}</textarea>
+
+
+                <div class="editor-footer">
+
+                    <span>
+                        C Language
+                    </span>
+
+                    <button id="runButton"
+                            class="run-button"
+                            onclick="runCode()">
+                        ▶ Run Code
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Side -->
+
+            <div class="output-panel">
+
+                <div class="input-section">
+
+                    <div class="panel-header">
+
+                        <span>
+                            ⌨️ Input
+                        </span>
+
+                    </div>
+
+                    <textarea id="input"
+                              placeholder="Enter input for scanf() programs..."></textarea>
+
+                </div>
+
+
+                <div class="output-section">
+
+                    <div class="panel-header">
+
+                        <span>
+                            📤 Output
+                        </span>
+
+                        <button id="clearButton"
+                                class="small-button">
+                            Clear
+                        </button>
+
+                    </div>
+
+                    <pre id="output">Output will appear here...</pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="section">
+
+        <div class="section-heading center">
+
+            <span class="section-label">
+                ⚡ SIMPLE
+            </span>
+
+            <h2>
+                How It Works
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Choose a Program
+                </h3>
+
+                <p>
+                    Select a C programming example
+                    from the available topics.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Edit the Code
+                </h3>
+
+                <p>
+                    Modify the code and experiment
+                    with your own ideas.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Run & Learn
+                </h3>
+
+                <p>
+                    Run your program and see the
+                    output instantly.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    💻 Dev C Program
+                </h3>
+
+                <p>
+                    Learn C programming through
+                    practice.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
