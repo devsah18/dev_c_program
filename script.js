@@ -114,7 +114,6 @@ int main() {
     return 0;
 }`
 };
-
 const API_URL = "https://dev-c-program-1.onrender.com/run";
 
 const $ = (id) => document.getElementById(id);
