@@ -121,7 +121,7 @@ int main() {
  * Example:
  * const API_URL = "https://your-service-name.onrender.com/run";
  */
-const API_URL = "https://YOUR-BACKEND.onrender.com/run";
+const API_URL ="https://dev-c-program-api.onrender.com/run";
 
 const $ = (id) => document.getElementById(id);
 const codeBox = $("code");
